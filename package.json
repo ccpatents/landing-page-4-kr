@@ -1,0 +1,9 @@
+{
+  "name": "landing-page-kr",
+  "version": "1.0.0",
+  "description": "landingpage",
+  "main": "index.js",
+  "repository": "https://github.com/ccpatents/landing-page-4-kr",
+  "author": "ccpatents <ccpatents@github.com>",
+  "license": "GPL"
+}
