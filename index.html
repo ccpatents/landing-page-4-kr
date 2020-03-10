@@ -14,7 +14,7 @@
     <meta property="og:title" content="무료 특허 검색 솔루션" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://kr.ccpatents.net" />
-    <meta property="og:image" content="https://kr.ccpatents.net/icon.png?v=1" />
+    <!--<meta property="og:image" content="https://kr.ccpatents.net/icon.png?v=1" />-->
     <meta property="og:site_name" content="CCPatents" />
     <meta property="og:description"
         content="특허 검색할 때 검색량이 너무 많아서 당황하신 경험이 있으신가요?. 해결책은 CCPatents입니다. CCPatents를 사용하면 정확도는 높이면서 검색량은 획기적으로 줄일 수 있습니다." />
@@ -53,19 +53,19 @@
                     <div class="col-6">문구</div>
 
                 </div>-->
-                <div class="lower">
-                    <img src="img/1.svg" alt="Breaking Borders Logo" height="auto" width="100%">
-                </div>
+            <div class="lower">
+                <img src="img/1.svg" alt="Breaking Borders Logo" height="auto" width="100%">
             </div>
-        </section>
+    </div>
+    </section>
 
-        <section id="solution" class="section">
-            <div class="container">
-                <div class="row">
-                    <div>안녕하세요2</div>
-                </div>
+    <section id="solution" class="section">
+        <div class="container">
+            <div class="row">
+                <div>안녕하세요2</div>
             </div>
-        </section>
+        </div>
+    </section>
     </div>
 
 
@@ -84,5 +84,18 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>-->
     <script src="js/scrolloverflow.min.js"></script>
     <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+                anchors: ['firstPage', 'secondPage'],
+                sectionsColor: ['transparent', '#7E8F7C'],
+                navigation: true,
+                navigationPosition: 'right',
+                navigationTooltips: ['특허 검색 너무 어렵죠?', '우리에겐 CCPatents가 있습니다.'],
+                showActiveTooltip: true,
+                verticalCentered: false
+            });
+        });
+    </script>
     <script src="js/script.js"></script>
 </body>
