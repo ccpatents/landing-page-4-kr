@@ -10771,6 +10771,14 @@ a.text-dark:hover, a.text-dark:focus {
   font-style: normal;
 }
 
+p {
+  font-family: BMHANNAPro !important;
+}
+
+#fp-nav {
+  top: 10% !important;
+}
+
 .fp-tooltip {
   opacity: 1;
   pointer-events: none;
@@ -10838,7 +10846,6 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 #home .message {
-  font-family: BMHANNAPro;
   font-size: 4rem;
 }
 
@@ -10854,10 +10861,27 @@ a.text-dark:hover, a.text-dark:focus {
   background-repeat: no-repeat;
 }
 
+#ranges .message {
+  font-size: 4.5rem;
+  color: white;
+  padding-top: 1rem;
+}
+
+#synonyms #synonyms-contents {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(108, 117, 125, 0.5)), to(rgba(108, 117, 125, 0.5))), url("../img/1.png");
+  background: linear-gradient(to bottom, rgba(108, 117, 125, 0.5) 0%, rgba(108, 117, 125, 0.5) 100%), url("../img/1.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
 #synonyms .wave-mask {
   background-size: cover;
   background-image: url("../img/5.svg");
   background-repeat: no-repeat;
+}
+
+#synonyms .message {
+  font-size: 4rem;
 }
 
 #others .wave-mask {
@@ -10866,8 +10890,17 @@ a.text-dark:hover, a.text-dark:focus {
   background-repeat: no-repeat;
 }
 
+#others .message {
+  font-size: 4rem;
+}
+
 #install .wave-mask {
   background-size: cover;
   background-image: url("../img/5.svg");
   background-repeat: no-repeat;
+}
+
+#install .message {
+  font-size: 5rem;
+  padding-top: 1rem;
 }
