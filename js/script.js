@@ -1,12 +1,12 @@
 (function ($) {
-    /*$('#fullpage').fullpage({
-        anchors: ['firstPage', 'secondPage'],
-        sectionsColor: ['transparent', '#7E8F7C'],
+    $('#fullpage').fullpage({
+        anchors: ['Page1', 'Page2', 'Page3', 'Page4'],
+        sectionsColor: ['transparent', 'transparent', 'transparent', 'transparent'],
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['특허 검색 너무 어렵죠?', '우리에겐 CCPatents가 있습니다.'],
+        navigationTooltips: ['검색량이 너무 많죠?', '검색 범위를 쉽게 조절할 수 있습니다.', '단어에만 신경쓰면 됩니다.', '마이크로소프트 스토어에서 안전하게'],
         showActiveTooltip: true,
         verticalCentered: false
-    });*/
+    });
     /* end dot nav */
 })(jQuery); // End of use strict

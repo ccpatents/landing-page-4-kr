@@ -31,11 +31,11 @@
     left: 12.369519833%;
     width: 75.260960334%;
     height: 81.8511796733%;
-    z-index: 3; }
+    z-index: 100; }
   .device[data-device="Macbook"][data-orientation="portrait"][data-color="black"]::after {
     content: '';
     background-image: url(../device-mockups/Macbook/portrait_black.png);
-    z-index: 2; }
+    z-index: 99; }
   .device[data-device="Macbook"][data-orientation="portrait"][data-color="black"] .button {
     display: none;
     top: 0%;
@@ -50,11 +50,11 @@
     left: 12.369519833%;
     width: 75.260960334%;
     height: 81.8511796733%;
-    z-index: 3 }
+    z-index: 100; }
   .device[data-device="Macbook"][data-orientation="portrait"][data-color="white"]::after {
     content: '';
     background-image: url(../device-mockups/Macbook/portrait_white.png);
-    z-index: 2; }
+    z-index: 99; }
   .device[data-device="Macbook"][data-orientation="portrait"][data-color="white"] .button {
     display: none;
     top: 0%;
@@ -69,11 +69,11 @@
     left: 12.369519833%;
     width: 75.260960334%;
     height: 81.8511796733%;
-    z-index: 3 }
+    z-index: 100; }
   .device[data-device="Macbook"][data-orientation="portrait"][data-color="gold"]::after {
     content: '';
     background-image: url(../device-mockups/Macbook/portrait_gold.png);
-    z-index: 2; }
+    z-index: 99; }
   .device[data-device="Macbook"][data-orientation="portrait"][data-color="gold"] .button {
     display: none;
     top: 0%;
@@ -88,11 +88,11 @@
     left: 12.4217118998%;
     width: 75.1565762004%;
     height: 81.7604355717%;
-    z-index: 3 }
+    z-index: 100; }
   .device[data-device="Macbook2015"][data-orientation="portrait"][data-color="black"]::after {
     content: '';
     background-image: url(../device-mockups/Macbook2015/portrait_black.png);
-    z-index: 2; }
+    z-index: 99; }
   .device[data-device="Macbook2015"][data-orientation="portrait"][data-color="black"] .button {
     display: none;
     top: 0%;
@@ -107,11 +107,11 @@
     left: 12.4217118998%;
     width: 75.1565762004%;
     height: 81.7604355717%;
-    z-index: 3 }
+    z-index: 100; }
   .device[data-device="Macbook2015"][data-orientation="portrait"][data-color="white"]::after {
     content: '';
     background-image: url(../device-mockups/Macbook2015/portrait_white.png);
-    z-index: 2; }
+    z-index: 99; }
   .device[data-device="Macbook2015"][data-orientation="portrait"][data-color="white"] .button {
     display: none;
     top: 0%;
@@ -126,11 +126,11 @@
     left: 12.4217118998%;
     width: 75.1565762004%;
     height: 81.7604355717%;
-    z-index: 3 }
+    z-index: 100; }
   .device[data-device="Macbook2015"][data-orientation="portrait"][data-color="gold"]::after {
     content: '';
     background-image: url(../device-mockups/Macbook2015/portrait_gold.png);
-    z-index: 2; }
+    z-index: 99; }
   .device[data-device="Macbook2015"][data-orientation="portrait"][data-color="gold"] .button {
     display: none;
     top: 0%;
@@ -145,11 +145,11 @@
     left: 11.8377483444%;
     width: 76.4072847682%;
     height: 82.4285714286%;
-    z-index: 3 }
+    z-index: 100; }
   .device[data-device="MacbookPro"][data-orientation="portrait"][data-color="black"]::after {
     content: '';
     background-image: url(../device-mockups/MacbookPro/portrait_black.png);
-    z-index: 2; }
+    z-index: 99; }
   .device[data-device="MacbookPro"][data-orientation="portrait"][data-color="black"] .button {
     display: none;
     top: 0%;

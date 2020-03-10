@@ -10789,6 +10789,7 @@ a.text-dark:hover, a.text-dark:focus {
   border-radius: 4px;
   overflow: visible !important;
   margin-right: 5px;
+  max-width: 500px !important;
 }
 
 .fp-tooltip::after {
@@ -10829,18 +10830,18 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-#home .container-fluid, #home .container-sm, #home .container-md, #home .container-lg, #home .container-xl {
-  height: 100%;
-  width: 100%;
-  display: -ms-grid !important;
-  display: grid !important;
-  -ms-grid-rows: 2fr 1fr !important;
-      grid-template-rows: 2fr 1fr !important;
-  padding: 0;
-  overflow: visible;
-  z-index: 1;
+#home #home-contents {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(108, 117, 125, 0.5)), to(rgba(108, 117, 125, 0.5))), url("../img/1.png");
+  background: linear-gradient(to bottom, rgba(108, 117, 125, 0.5) 0%, rgba(108, 117, 125, 0.5) 100%), url("../img/1.png");
 }
 
-#home .lower {
-  background-color: #7E8F7C;
+#home .message {
+  font-family: BMHANNAPro;
+  font-size: 4rem;
+}
+
+#home .wave-mask {
+  background-size: cover;
+  background-image: url("../img/5.svg");
+  background-repeat: no-repeat;
 }
