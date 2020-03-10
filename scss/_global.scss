@@ -1,42 +1,60 @@
-#menu li {
-	display:inline-block;
-	margin: 10px;
-	color: #000;
-	background:#fff;
-	background: rgba(255,255,255, 0.5);
-	-webkit-border-radius: 10px;
-            border-radius: 10px;
+@font-face {
+	font-family: 'BMHANNAPro';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
-#menu li.active{
-	background:#666;
-	background: rgba(0,0,0, 0.5);
-	color: #fff;
+
+.fp-tooltip {
+	opacity: 1;
+	pointer-events: none;
+	position: absolute;
+	top: -5px !important;
+	right: 21px;
+	width: auto;
+	text-align: right;
+	background-color: rgba(50, 54, 54, .7);
+	color: white;
+	font-size: 13px;
+	display: flex;
+	padding: 2px 6px;
+	border-radius: 4px;
+	overflow: visible !important;
+	margin-right: 5px;
 }
-#menu li a{
-	text-decoration:none;
-	color: #000;
+
+.fp-tooltip::after {
+	position: absolute;
+	right: -5px;
+	top: 7px;
+	align-self: center;
+	width: 0px;
+	height: 0px;
+	content: " ";
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-left: 5px solid rgba(50, 54, 54, .7);
 }
-#menu li.active a:hover{
-	color: #000;
+
+.video-container {
+	position: relative;
+	padding-bottom: 62.5%;
+	height: 0;
+	overflow: hidden;
 }
-#menu li:hover{
-	background: rgba(255,255,255, 0.8);
-}
-#menu li a,
-#menu li.active a{
-	padding: 9px 18px;
-	display:block;
-}
-#menu li.active a{
-	color: #fff;
-}
-#menu{
-	position:fixed;
-	top:0;
-	left:0;
-	height: 40px;
-	z-index: 70;
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
-	padding: 0;
-	margin:0;
+	height: 100%;
+}
+
+@include media-breakpoint-down(sm) {
+	#fp-nav {
+		display: none !important;
+	}
 }
