@@ -1,4 +1,10 @@
 #ranges {
+    #ranges-contents {
+        background: linear-gradient(to left, #{fade-out($secondary, .15)} 0%, #{fade-out($white, .85)} 100%);
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+
     .wave-mask {
         background-size: cover;
         background-image: url('../img/6.svg');

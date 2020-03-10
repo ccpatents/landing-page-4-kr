@@ -1,6 +1,6 @@
 #synonyms {
     #synonyms-contents {
-        background: linear-gradient(to bottom, #{fade-out($secondary, .5)} 0%, #{fade-out($secondary, .5)} 100%), url('../img/1.png');
+        background: linear-gradient(to left, #{fade-out($secondary, .15)} 0%, #{fade-out($white, .85)} 100%), url('../img/8.png');
         background-repeat: no-repeat;
         background-position: right top;
     }
@@ -13,5 +13,6 @@
 
     .message {
         font-size: 4rem;
+        color: white;
     }
 }

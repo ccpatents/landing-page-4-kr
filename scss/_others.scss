@@ -1,4 +1,10 @@
 #others {
+    #others-contents {
+        background: linear-gradient(to top, #{fade-out($secondary, .15)} 0%, #{fade-out($white, .85)} 100%), url('../img/9.png');
+        background-repeat: no-repeat;
+        background-position: left bottom;
+    }
+
     .wave-mask {
         background-size: cover;
         background-image: url('../img/6.svg');
@@ -7,5 +13,6 @@
 
     .message {
         font-size: 4.5rem;
+        color: white;
     }
 }

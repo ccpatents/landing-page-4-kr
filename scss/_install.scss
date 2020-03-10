@@ -1,4 +1,10 @@
 #install {
+    #install-contents {
+        background: linear-gradient(to bottom, #{fade-out($secondary, .15)} 0%, #{fade-out($white, .85)} 100%), url('../img/10.png');
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+
     .wave-mask {
         background-size: cover;
         background-image: url('../img/5.svg');
@@ -7,6 +13,7 @@
 
     .message {
         font-size: 5rem;
+        color: white;
         padding-top: 1rem;
     }
 }
