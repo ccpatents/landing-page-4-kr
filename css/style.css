@@ -10833,6 +10833,8 @@ a.text-dark:hover, a.text-dark:focus {
 #home #home-contents {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(108, 117, 125, 0.5)), to(rgba(108, 117, 125, 0.5))), url("../img/1.png");
   background: linear-gradient(to bottom, rgba(108, 117, 125, 0.5) 0%, rgba(108, 117, 125, 0.5) 100%), url("../img/1.png");
+  background-repeat: no-repeat;
+  background-position: right top;
 }
 
 #home .message {
@@ -10841,6 +10843,30 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 #home .wave-mask {
+  background-size: cover;
+  background-image: url("../img/5.svg");
+  background-repeat: no-repeat;
+}
+
+#ranges .wave-mask {
+  background-size: cover;
+  background-image: url("../img/6.svg");
+  background-repeat: no-repeat;
+}
+
+#synonyms .wave-mask {
+  background-size: cover;
+  background-image: url("../img/5.svg");
+  background-repeat: no-repeat;
+}
+
+#others .wave-mask {
+  background-size: cover;
+  background-image: url("../img/6.svg");
+  background-repeat: no-repeat;
+}
+
+#install .wave-mask {
   background-size: cover;
   background-image: url("../img/5.svg");
   background-repeat: no-repeat;
