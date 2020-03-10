@@ -1,6 +1,6 @@
 (function ($) {
     $('#fullpage').fullpage({
-        anchors: ['Page1', 'Page2', 'Page3', 'Page4'],
+        anchors: ['검색량이너무많죠??', '검색범위를쉽게조절할수있습니다.', '단어에만신경쓰면됩니다.', '다양한기능들이있어요', '마이크로소프트스토어에서안전하게'],
         sectionsColor: ['transparent', 'transparent', 'transparent', 'transparent', 'transparent'],
         navigation: true,
         navigationPosition: 'right',
