@@ -10773,6 +10773,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 p {
   font-family: BMHANNAPro !important;
+  z-index: 3;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 #fp-nav {
@@ -10839,14 +10841,14 @@ p {
 }
 
 #home #home-contents {
-  background: -webkit-gradient(linear, right top, left top, from(rgba(108, 117, 125, 0.85)), to(rgba(255, 255, 255, 0.15))), url("../img/1.png");
-  background: linear-gradient(to left, rgba(108, 117, 125, 0.85) 0%, rgba(255, 255, 255, 0.15) 100%), url("../img/1.png");
+  background: -webkit-gradient(linear, left top, right top, from(rgba(108, 117, 125, 0.75)), to(rgba(255, 255, 255, 0.15))), url("../img/11.png");
+  background: linear-gradient(to right, rgba(108, 117, 125, 0.75) 0%, rgba(255, 255, 255, 0.15) 100%), url("../img/11.png");
   background-repeat: no-repeat;
-  background-position: right top;
+  background-position: left top;
 }
 
 #home .message {
-  font-size: 4rem;
+  font-size: 5rem;
   color: white;
 }
 
@@ -10872,14 +10874,14 @@ p {
 #ranges .message {
   font-size: 4.5rem;
   color: white;
-  padding-top: 1rem;
+  padding-top: 1.5rem;
 }
 
 #synonyms #synonyms-contents {
-  background: -webkit-gradient(linear, right top, left top, from(rgba(108, 117, 125, 0.85)), to(rgba(255, 255, 255, 0.15))), url("../img/8.png");
-  background: linear-gradient(to left, rgba(108, 117, 125, 0.85) 0%, rgba(255, 255, 255, 0.15) 100%), url("../img/8.png");
+  background: -webkit-gradient(linear, left top, right top, from(rgba(108, 117, 125, 0.75)), to(rgba(255, 255, 255, 0.15))), url("../img/12.png");
+  background: linear-gradient(to right, rgba(108, 117, 125, 0.75) 0%, rgba(255, 255, 255, 0.15) 100%), url("../img/12.png");
   background-repeat: no-repeat;
-  background-position: right top;
+  background-position: left top;
 }
 
 #synonyms .wave-mask {
@@ -10894,8 +10896,8 @@ p {
 }
 
 #others #others-contents {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(108, 117, 125, 0.85)), to(rgba(255, 255, 255, 0.15))), url("../img/9.png");
-  background: linear-gradient(to top, rgba(108, 117, 125, 0.85) 0%, rgba(255, 255, 255, 0.15) 100%), url("../img/9.png");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(108, 117, 125, 0.75)), to(rgba(255, 255, 255, 0.15))), url("../img/13.png");
+  background: linear-gradient(to top, rgba(108, 117, 125, 0.75) 0%, rgba(255, 255, 255, 0.15) 100%), url("../img/13.png");
   background-repeat: no-repeat;
   background-position: left bottom;
 }
@@ -10912,10 +10914,10 @@ p {
 }
 
 #install #install-contents {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(108, 117, 125, 0.85)), to(rgba(255, 255, 255, 0.15))), url("../img/10.png");
-  background: linear-gradient(to bottom, rgba(108, 117, 125, 0.85) 0%, rgba(255, 255, 255, 0.15) 100%), url("../img/10.png");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(108, 117, 125, 0.85)), to(rgba(255, 255, 255, 0.15))), url("../img/14.png");
+  background: linear-gradient(to bottom, rgba(108, 117, 125, 0.85) 0%, rgba(255, 255, 255, 0.15) 100%), url("../img/14.png");
   background-repeat: no-repeat;
-  background-position: right top;
+  background-size: cover;
 }
 
 #install .wave-mask {

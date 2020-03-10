@@ -1,8 +1,8 @@
 #install {
     #install-contents {
-        background: linear-gradient(to bottom, #{fade-out($secondary, .15)} 0%, #{fade-out($white, .85)} 100%), url('../img/10.png');
+        background: linear-gradient(to bottom, #{fade-out($secondary, .15)} 0%, #{fade-out($white, .85)} 100%), url('../img/14.png');
         background-repeat: no-repeat;
-        background-position: right top;
+        background-size: cover;
     }
 
     .wave-mask {

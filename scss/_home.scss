@@ -1,12 +1,12 @@
 #home {
     #home-contents {
-        background: linear-gradient(to left, #{fade-out($secondary, .15)} 0%, #{fade-out($white, .85)} 100%), url('../img/1.png');
+        background: linear-gradient(to right, #{fade-out($secondary, .25)} 0%, #{fade-out($white, .85)} 100%), url('../img/11.png');
         background-repeat: no-repeat;
-        background-position: right top;
+        background-position: left top;
     }
 
     .message {
-        font-size: 4rem;
+        font-size: 5rem;
         color: white;
     }
 
