@@ -1,13 +1,11 @@
 var win_10 = false;
 
-var home_player;
-var ranges_player;
-var synonyms_player;
-var others_player;
-var install_player;
+var current_section = 1;
 
 (function ($) {
     "use strict"; // Start of use strict
+
+    fullPageInit();
 
     let ua = navigator
         .userAgent
@@ -31,96 +29,19 @@ var install_player;
                 });
             }
             store_event = true;*/
-            console.log('store');
+            if(current_section == 5) {
+                window.location.href = "ms-windows-store://pdp/?productid=9N798V33QDF8";
+            } else {
+                setTimeout(function () {
+                    window.location.href = "ms-windows-store://pdp/?productid=9N798V33QDF8";
+                }, 1500)
+            }
+            
         }
     }
 
-    var tag = document.createElement('script');
-    tag.src = "https://www.youtube.com/iframe_api";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag
-        .parentNode
-        .insertBefore(tag, firstScriptTag);
-
 })(jQuery); // End of use strict
 
-function onYouTubeIframeAPIReady() {
-    home_player = new YT.Player('home-video', {
-        width: '100%',
-        videoId: 'hJuHVgCmoSw',
-        events: {
-            'onReady': onHomeReady,
-            'onStateChange': onPlayerStateChange
-        }
-    });
-
-    ranges_player = new YT.Player('ranges-video', {
-        width: '100%',
-        videoId: 'HsTJTniEItI',
-        events: {
-            'onReady': onRangesReady,
-            //'onStateChange': onPlayerStateChange
-        }
-    });
-
-    synonyms_player = new YT.Player('synonyms-video', {
-        width: '100%',
-        videoId: 'QYxdIMmQKAA',
-        events: {
-            'onReady': onSynonymsReady,
-            //'onStateChange': onPlayerStateChange
-        }
-    });
-
-    others_player = new YT.Player('others-video', {
-        width: '100%',
-        videoId: 'zS6qn2A7yR8',
-        events: {
-            'onReady': onOthersReady,
-            //'onStateChange': onPlayerStateChange
-        }
-    });
-
-    install_player = new YT.Player('install-video', {
-        width: '100%',
-        videoId: '6GLS2SxLgqI',
-        events: {
-            'onReady': onInstallReady,
-            //'onStateChange': onPlayerStateChange
-        }
-    });
-
-}
-
-// 4. The API will call this function when the video player is ready.
-function onHomeReady(event) {
-    //home_player = event.target;
-    home_player.playVideo();
-    //home_player.seekTo(27);
-    home_player.mute();
-}
-
-function onRangesReady(event) {
-    //ranges_player = event.target;
-    ranges_player.mute();
-}
-
-function onSynonymsReady(event) {
-    //synonyms_player = event.target;
-    synonyms_player.mute();
-}
-
-function onOthersReady(event) {
-    //others_player = event.target;
-    others_player.mute();
-}
-
-function onInstallReady(event) {
-    //install_player = event.target;
-    install_player.mute();
-
-    fullPageInit();
-}
 
 function fullPageInit() {
     $('#fullpage').fullpage({
@@ -138,46 +59,7 @@ function fullPageInit() {
         showActiveTooltip: true,
         verticalCentered: false,
         afterLoad: function (origin, destination) {
-            switch (destination) {
-                case 1: // home-player
-                    if (home_player) {
-                        home_player.playVideo();
-                        home_player.playVideo();
-                    }
-                    break;
-                case 2: // ranges-player
-                    if (ranges_player) {
-                        ranges_player.playVideo();
-                        ranges_player.playVideo();
-                    }
-                    break;
-                case 3: // synonyms-player
-                    if (synonyms_player) {
-                        synonyms_player.playVideo();
-                        synonyms_player.playVideo();
-                    }
-                    break;
-                case 4: // others-player
-                    if (others_player) {
-                        others_player.playVideo();
-                        others_player.playVideo();
-                    }
-                    break;
-                case 5: // install-player
-                    if (install_player) {
-                        install_player.playVideo();
-                        install_player.playVideo();
-                    }
-                    break;
-                default:
-            }
+            current_section = destination;
         }
     });
-}
-
-function onPlayerStateChange(event) {
-    console.log('hello');
-    if (event.data == YT.PlayerState.ENDED) {
-        event.target.stopVideo();
-    }
 }
