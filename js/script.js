@@ -83,7 +83,7 @@ function display_mobile_app() {
         let width = window.innerWidth;
         let height = window.innerHeight;
 
-        if ((width < 576) && (height > (width * 1.4))) {
+        if ((height > (width * 1.5))) {
             $('#mobile_app').show();
             $('#mobile_app_content').show();
         } else {
