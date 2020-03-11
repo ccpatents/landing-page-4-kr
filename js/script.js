@@ -79,7 +79,7 @@ function fullPageInit() {
 }
 
 function display_mobile_app() {
-    if (is_mobile) {
+    if (true) {
         let width = window.innerWidth;
         let height = window.innerHeight;
 
