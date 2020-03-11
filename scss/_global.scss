@@ -5,6 +5,11 @@
 	font-style: normal;
 }
 
+body {
+	word-break: keep-all;
+}
+
+
 p {
 	font-family: BMHANNAPro !important;
 	z-index: 3;

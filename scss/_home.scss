@@ -1,38 +1,32 @@
 #home {
-    #home-contents {
-        background: linear-gradient(to right, #{fade-out($secondary, .25)} 0%, #{fade-out($white, .85)} 100%), url('../img/11.png');
-        background-repeat: no-repeat;
-        background-position: left top;
-    }
+    background: linear-gradient(to right, #{fade-out($secondary, .25)} 0%, #{fade-out($white, .85)} 100%), url('../img/11.png');
+    background-repeat: no-repeat;
+    background-position: left top;
 
     .message {
-        font-size: 3.7rem;
+        font-size: 3.2rem;
         color: white;
     }
-
 
     .wave-mask {
         background-size: cover;
         background-image: url('../img/5.svg');
         background-repeat: no-repeat;
     }
-
     @include media-breakpoint-down(lg) {
+        .message {
+            font-size: 2.6rem;
+        }
+    }
+    @include media-breakpoint-down(md) {
         .message {
             font-size: 3rem;
         }
     }
-    
-    @include media-breakpoint-down(md) {
-        .message {
-            margin-bottom: -75px !important;
-        }
-    }
-    
     @include media-breakpoint-down(sm) {
         .message {
             font-size: 2rem;
-            margin-bottom: -227px !important;
+            //margin-bottom: -160px !important;
         }
-	}
+    }
 }

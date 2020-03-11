@@ -1,9 +1,7 @@
 #ranges {
-    #ranges-contents {
-        background: linear-gradient(to right, #{fade-out($secondary, .25)} 0%, #{fade-out($white, .85)} 100%);
-        background-repeat: no-repeat;
-        background-position: right top;
-    }
+    background: linear-gradient(to right, #{fade-out($secondary, .25)} 0%, #{fade-out($white, .85)} 100%);
+    background-repeat: no-repeat;
+    background-position: right top;
 
     .wave-mask {
         background-size: cover;
@@ -12,8 +10,24 @@
     }
 
     .message {
-        font-size: 4.5rem;
+        font-size: 3.7rem;
         color: white;
-        padding-top: 1.5rem;
+    }
+    
+    @include media-breakpoint-down(lg) {
+        .message {
+            font-size: 3rem;
+        }
+    }
+    @include media-breakpoint-down(md) {
+        .message {
+            font-size: 2.6rem;
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        .message {
+            font-size: 2.2rem;
+            //margin-bottom: -160px !important;
+        }
     }
 }

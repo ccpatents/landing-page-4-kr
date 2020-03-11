@@ -10771,6 +10771,10 @@ a.text-dark:hover, a.text-dark:focus {
   font-style: normal;
 }
 
+body {
+  word-break: keep-all;
+}
+
 p {
   font-family: BMHANNAPro !important;
   z-index: 3;
@@ -10840,7 +10844,7 @@ p {
   }
 }
 
-#home #home-contents {
+#home {
   background: -webkit-gradient(linear, left top, right top, from(rgba(108, 117, 125, 0.75)), to(rgba(255, 255, 255, 0.15))), url("../img/11.png");
   background: linear-gradient(to right, rgba(108, 117, 125, 0.75) 0%, rgba(255, 255, 255, 0.15) 100%), url("../img/11.png");
   background-repeat: no-repeat;
@@ -10848,7 +10852,7 @@ p {
 }
 
 #home .message {
-  font-size: 3.7rem;
+  font-size: 3.2rem;
   color: white;
 }
 
@@ -10860,24 +10864,23 @@ p {
 
 @media (max-width: 1199.98px) {
   #home .message {
-    font-size: 3rem;
+    font-size: 2.6rem;
   }
 }
 
 @media (max-width: 991.98px) {
   #home .message {
-    margin-bottom: -75px !important;
+    font-size: 3rem;
   }
 }
 
 @media (max-width: 767.98px) {
   #home .message {
     font-size: 2rem;
-    margin-bottom: -227px !important;
   }
 }
 
-#ranges #ranges-contents {
+#ranges {
   background: -webkit-gradient(linear, left top, right top, from(rgba(108, 117, 125, 0.75)), to(rgba(255, 255, 255, 0.15)));
   background: linear-gradient(to right, rgba(108, 117, 125, 0.75) 0%, rgba(255, 255, 255, 0.15) 100%);
   background-repeat: no-repeat;
@@ -10891,12 +10894,29 @@ p {
 }
 
 #ranges .message {
-  font-size: 4.5rem;
+  font-size: 3.7rem;
   color: white;
-  padding-top: 1.5rem;
 }
 
-#synonyms #synonyms-contents {
+@media (max-width: 1199.98px) {
+  #ranges .message {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #ranges .message {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #ranges .message {
+    font-size: 2.2rem;
+  }
+}
+
+#synonyms {
   background: -webkit-gradient(linear, left top, right top, from(rgba(108, 117, 125, 0.75)), to(rgba(255, 255, 255, 0.15))), url("../img/12.png");
   background: linear-gradient(to right, rgba(108, 117, 125, 0.75) 0%, rgba(255, 255, 255, 0.15) 100%), url("../img/12.png");
   background-repeat: no-repeat;
@@ -10910,11 +10930,29 @@ p {
 }
 
 #synonyms .message {
-  font-size: 4rem;
+  font-size: 3rem;
   color: white;
 }
 
-#others #others-contents {
+@media (max-width: 1199.98px) {
+  #synonyms .message {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #synonyms .message {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #synonyms .message {
+    font-size: 1.8rem;
+  }
+}
+
+#others {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(108, 117, 125, 0.75)), to(rgba(255, 255, 255, 0.15))), url("../img/13.png");
   background: linear-gradient(to top, rgba(108, 117, 125, 0.75) 0%, rgba(255, 255, 255, 0.15) 100%), url("../img/13.png");
   background-repeat: no-repeat;
@@ -10928,11 +10966,29 @@ p {
 }
 
 #others .message {
-  font-size: 4.5rem;
+  font-size: 3rem;
   color: white;
 }
 
-#install #install-contents {
+@media (max-width: 1199.98px) {
+  #others .message {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #others .message {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #others .message {
+    font-size: 1.8rem;
+  }
+}
+
+#install {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(108, 117, 125, 0.85)), to(rgba(255, 255, 255, 0.15))), url("../img/14.png");
   background: linear-gradient(to bottom, rgba(108, 117, 125, 0.85) 0%, rgba(255, 255, 255, 0.15) 100%), url("../img/14.png");
   background-repeat: no-repeat;
@@ -10946,8 +11002,25 @@ p {
 }
 
 #install .message {
-  font-size: 5rem;
+  font-size: 3.7rem;
   color: white;
-  padding-top: 1.5rem;
+}
+
+@media (max-width: 1199.98px) {
+  #install .message {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #install .message {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #install .message {
+    font-size: 2.2rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
