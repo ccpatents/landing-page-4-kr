@@ -56,7 +56,7 @@ function onYouTubeIframeAPIReady() {
 
     ranges_player = new YT.Player('ranges-video', {
         width: '100%',
-        videoId: 'hJuHVgCmoSw',
+        videoId: 'HsTJTniEItI',
         events: {
             'onReady': onRangesReady,
             //'onStateChange': onPlayerStateChange
@@ -65,7 +65,7 @@ function onYouTubeIframeAPIReady() {
 
     synonyms_player = new YT.Player('synonyms-video', {
         width: '100%',
-        videoId: 'hJuHVgCmoSw',
+        videoId: 'QYxdIMmQKAA',
         events: {
             'onReady': onSynonymsReady,
             //'onStateChange': onPlayerStateChange
@@ -74,7 +74,7 @@ function onYouTubeIframeAPIReady() {
 
     others_player = new YT.Player('others-video', {
         width: '100%',
-        videoId: 'hJuHVgCmoSw',
+        videoId: 'zS6qn2A7yR8',
         events: {
             'onReady': onOthersReady,
             //'onStateChange': onPlayerStateChange
