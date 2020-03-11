@@ -10848,7 +10848,7 @@ p {
 }
 
 #home .message {
-  font-size: 5rem;
+  font-size: 3.7rem;
   color: white;
 }
 
@@ -10856,6 +10856,25 @@ p {
   background-size: cover;
   background-image: url("../img/5.svg");
   background-repeat: no-repeat;
+}
+
+@media (max-width: 1199.98px) {
+  #home .message {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #home .message {
+    margin-bottom: -75px !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #home .message {
+    font-size: 2rem;
+    margin-bottom: -227px !important;
+  }
 }
 
 #ranges #ranges-contents {
@@ -10931,3 +10950,4 @@ p {
   color: white;
   padding-top: 1.5rem;
 }
+/*# sourceMappingURL=style.css.map */

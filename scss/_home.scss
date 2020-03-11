@@ -6,7 +6,7 @@
     }
 
     .message {
-        font-size: 5rem;
+        font-size: 3.7rem;
         color: white;
     }
 
@@ -16,4 +16,23 @@
         background-image: url('../img/5.svg');
         background-repeat: no-repeat;
     }
+
+    @include media-breakpoint-down(lg) {
+        .message {
+            font-size: 3rem;
+        }
+    }
+    
+    @include media-breakpoint-down(md) {
+        .message {
+            margin-bottom: -75px !important;
+        }
+    }
+    
+    @include media-breakpoint-down(sm) {
+        .message {
+            font-size: 2rem;
+            margin-bottom: -227px !important;
+        }
+	}
 }
