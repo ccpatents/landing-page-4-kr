@@ -53,7 +53,6 @@ var current_section = 1;
 
     $(window)
         .resize(function () {
-            console.log('hello');
             display_mobile_app();
         })
 })(jQuery); // End of use strict
@@ -80,19 +79,16 @@ function fullPageInit() {
 }
 
 function display_mobile_app() {
-    if (is_mobile && !resize_timer) {
-        resize_timer = setTimeout(function () {
-            resize_timer = null;
-            let width = window.innerWidth;
-            let height = window.innerHeight;
+    if (is_mobile) {
+        let width = window.innerWidth;
+        let height = window.innerHeight;
 
-            if ((width < 576) && (height > (width * 1.5))) {
-                $('#mobile_app').show();
-                $('#mobile_app_content').show();
-            } else {
-                $('#mobile_app').hide();
-                $('#mobile_app_content').hide();
-            }
-        }, 250)
+        if ((width < 576) && (height > (width * 1.5))) {
+            $('#mobile_app').show();
+            $('#mobile_app_content').show();
+        } else {
+            $('#mobile_app').hide();
+            $('#mobile_app_content').hide();
+        }
     }
 }
