@@ -9,6 +9,8 @@ var current_section = 1;
 
     fullPageInit();
 
+    display_mobile_app();
+
     let ua = navigator
         .userAgent
         .toLowerCase();
@@ -26,11 +28,11 @@ var current_section = 1;
             .getElementById('store-button')
             .onclick = function () {
             /*if (!store_event) {
-                gtag('event', 'store', {
-                'event_category': 'button'
-                });
-            }
-            store_event = true;*/
+                    gtag('event', 'store', {
+                    'event_category': 'button'
+                    });
+                }
+                store_event = true;*/
             if (current_section == 5) {
                 window.location.href = "ms-windows-store://pdp/?productid=9N798V33QDF8";
             } else {
@@ -46,25 +48,14 @@ var current_section = 1;
     if (navigator.platform) {
         if (filter.indexOf(navigator.platform.toLowerCase()) < 0) {
             is_mobile = true;
-        } 
+        }
     }
 
-    $(window).resize(function () {
-        console.log('hello');
-        if (is_mobile && !resize_timer) {
-            resize_timer = setTimeout(function () {
-              resize_timer = null;
-              let width = window.innerWidth;
-              let height = window.innerHeight;
-
-              if((width < 576) && (height > (width * 1.6))) {
-                $('mobile_app').show();
-              } else {
-                $('mobile_app').hide();
-              }
-            }, 250)
-          }
-    })
+    $(window)
+        .resize(function () {
+            console.log('hello');
+            display_mobile_app();
+        })
 })(jQuery); // End of use strict
 
 function fullPageInit() {
@@ -86,4 +77,20 @@ function fullPageInit() {
             current_section = destination;
         }
     });
+}
+
+function display_mobile_app() {
+    if (is_mobile && !resize_timer) {
+        resize_timer = setTimeout(function () {
+            resize_timer = null;
+            let width = window.innerWidth;
+            let height = window.innerHeight;
+
+            if ((width < 576) && (height > (width * 1.2))) {
+                $('#mobile_app').show();
+            } else {
+                $('#mobile_app').hide();
+            }
+        }, 250)
+    }
 }
