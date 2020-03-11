@@ -79,11 +79,11 @@ function fullPageInit() {
 }
 
 function display_mobile_app() {
-    if (is_mobile) {
+    if (true) {
         let width = window.innerWidth;
         let height = window.innerHeight;
 
-        if ((width < 576) && (height > (width * 1.5))) {
+        if ((width < 576) && (height > (width * 1.4))) {
             $('#mobile_app').show();
             $('#mobile_app_content').show();
         } else {
