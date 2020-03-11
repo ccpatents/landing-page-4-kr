@@ -93,5 +93,5 @@ function display_mobile_app() {
 }
 
 function isMobile() {
-    return /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent);
+    return /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(ua);
 }
