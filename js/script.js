@@ -1,4 +1,6 @@
 var win_10 = false;
+var is_mobile = false;
+var resize_timer;
 
 var current_section = 1;
 
@@ -29,19 +31,40 @@ var current_section = 1;
                 });
             }
             store_event = true;*/
-            if(current_section == 5) {
+            if (current_section == 5) {
                 window.location.href = "ms-windows-store://pdp/?productid=9N798V33QDF8";
             } else {
                 setTimeout(function () {
                     window.location.href = "ms-windows-store://pdp/?productid=9N798V33QDF8";
                 }, 1500)
             }
-            
+
         }
     }
 
-})(jQuery); // End of use strict
+    let filter = "win32|win64|mac";
+    if (navigator.platform) {
+        if (filter.indexOf(navigator.platform.toLowerCase()) < 0) {
+            is_mobile = true;
+        } 
+    }
 
+    $(window).resize(function () {
+        if (is_mobile && !resize_timer) {
+            resize_timer = setTimeout(function () {
+              resize_timer = null;
+              let width = window.innerWidth;
+              let height = window.innerHeight;
+
+              if((width < 576) && (height > (width+width))) {
+                $('mobile_app').show();
+              } else {
+                $('mobile_app').hide();
+              }
+            }, 250)
+          }
+    })
+})(jQuery); // End of use strict
 
 function fullPageInit() {
     $('#fullpage').fullpage({
