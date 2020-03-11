@@ -45,10 +45,8 @@ var current_section = 1;
     }
 
     let filter = "win16|win32|win64|mac";
-    if (navigator.platform) {
-        if (filter.indexOf(navigator.platform.toLowerCase()) < 0) {
-            is_mobile = true;
-        }
+    if (isMobile()) {
+        is_mobile = true;
     }
 
     $(window)
@@ -91,4 +89,8 @@ function display_mobile_app() {
             $('#mobile_app_content').hide();
         }
     }
+}
+
+function isMobile() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 }
