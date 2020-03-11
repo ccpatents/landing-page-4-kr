@@ -86,10 +86,12 @@ function display_mobile_app() {
             let width = window.innerWidth;
             let height = window.innerHeight;
 
-            if ((width < 576) && (height > (width * 1.2))) {
+            if ((width < 576) && (height > (width * 1.5))) {
                 $('#mobile_app').show();
+                $('#mobile_app_content').show();
             } else {
                 $('#mobile_app').hide();
+                $('#mobile_app_content').hide();
             }
         }, 250)
     }
