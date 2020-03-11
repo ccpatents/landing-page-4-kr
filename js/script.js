@@ -1,6 +1,7 @@
 var win_10 = false;
 var is_mobile = false;
 var resize_timer;
+var ua;
 
 var current_section = 1;
 
@@ -11,7 +12,7 @@ var current_section = 1;
 
     display_mobile_app();
 
-    let ua = navigator
+    ua = navigator
         .userAgent
         .toLowerCase();
     win_10 = (ua.indexOf("windows nt 10.0") != -1 || ua.indexOf("windows nt 6.4") != -1)
@@ -81,7 +82,7 @@ function display_mobile_app() {
         let width = window.innerWidth;
         let height = window.innerHeight;
 
-        if ((height > (width * 1.4))) {
+        if ((height > (width * 1.5))) {
             $('#mobile_app').show();
             $('#mobile_app_content').show();
         } else {
@@ -92,5 +93,5 @@ function display_mobile_app() {
 }
 
 function isMobile() {
-    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    return /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent);
 }
